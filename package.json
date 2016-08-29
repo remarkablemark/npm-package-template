@@ -5,7 +5,7 @@
   "author": "Mark <mark@remarkablemark.org>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "lint": "eslint ."
   },
   "keywords": [
@@ -14,7 +14,8 @@
     "template"
   ],
   "devDependencies": {
-    "eslint": "^3.4.0"
+    "eslint": "^3.4.0",
+    "mocha": "^3.0.2"
   },
   "license": "MIT"
 }
