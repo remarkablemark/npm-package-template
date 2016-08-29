@@ -5,12 +5,16 @@
   "author": "Mark <mark@remarkablemark.org>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
   },
   "keywords": [
     "npm",
     "package",
     "template"
   ],
+  "devDependencies": {
+    "eslint": "^3.4.0"
+  },
   "license": "MIT"
 }
