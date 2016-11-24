@@ -12,6 +12,7 @@ $ npm install
 
 ```sh
 $ npm test
+$ npm run lint
 ```
 
 ## License
