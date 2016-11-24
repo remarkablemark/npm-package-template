@@ -10,6 +10,13 @@
     "cover": "istanbul cover _mocha -- -R spec \"test/**/*\"",
     "coveralls": "cat coverage/lcov.info | coveralls"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/remarkablemark/npm-package-template"
+  },
+  "bugs": {
+    "url": "https://github.com/remarkablemark/npm-package-template/issues"
+  },
   "keywords": [
     "npm",
     "package",
