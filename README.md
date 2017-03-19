@@ -2,9 +2,11 @@
 
 An npm package template.
 
-## Installation
+## Install
 
 ```sh
+$ git clone https://github.com/remarkablemark/npm-package-template.git
+$ cd npm-package-template
 $ npm install
 ```
 
@@ -17,4 +19,4 @@ $ npm run lint
 
 ## License
 
-MIT
+[MIT](https://github.com/remarkablemark/npm-package-template/blob/master/LICENSE)
