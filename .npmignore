@@ -1,5 +1,5 @@
-test
-coverage
 .eslint*
+.npm*
 .travis*
-.npmignore
+coverage
+test
