@@ -5,10 +5,11 @@
   "author": "Mark <mark@remarkablemark.org>",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "cover": "istanbul cover _mocha",
+    "coveralls": "cat coverage/lcov.info | coveralls",
     "lint": "eslint --ignore-path .gitignore .",
-    "cover": "istanbul cover _mocha -- -R spec \"test/**/*\"",
-    "coveralls": "cat coverage/lcov.info | coveralls"
+    "lint:fix": "npm run lint -- --fix",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
