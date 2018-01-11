@@ -9,6 +9,7 @@
     "coveralls": "cat coverage/lcov.info | coveralls",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "npm run lint -- --fix",
+    "release": "standard-version",
     "test": "mocha"
   },
   "repository": {
@@ -28,7 +29,8 @@
     "coveralls": "3.0.0",
     "eslint": "4.11.0",
     "istanbul": "0.4.5",
-    "mocha": "4.0.1"
+    "mocha": "4.0.1",
+    "standard-version": "4.2.0"
   },
   "license": "MIT"
 }
