@@ -41,6 +41,13 @@ $ npm test
 $ npm run lint
 ```
 
+## Release
+
+```sh
+$ npm run release
+$ git push --follow-tags
+```
+
 ## License
 
 [MIT](LICENSE)
