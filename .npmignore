@@ -1,3 +1,4 @@
+.commitlint*
 .eslint*
 .npm*
 .travis*

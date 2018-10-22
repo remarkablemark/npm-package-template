@@ -5,11 +5,13 @@
   "author": "Mark <mark@remarkablemark.org>",
   "main": "index.js",
   "scripts": {
+    "commitmsg": "commitlint -e $GIT_PARAMS",
     "cover": "istanbul cover _mocha",
     "coveralls": "cat coverage/lcov.info | coveralls",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "npm run lint -- --fix",
-    "release": "standard-version",
+    "precommit": "lint-staged",
+    "release": "standard-version --no-verify",
     "test": "mocha"
   },
   "repository": {
@@ -26,11 +28,26 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "coveralls": "3.0.0",
-    "eslint": "4.11.0",
+    "@commitlint/cli": "7.2.1",
+    "@commitlint/config-conventional": "7.1.2",
+    "coveralls": "3.0.2",
+    "eslint": "5.7.0",
+    "husky": "1.1.2",
     "istanbul": "0.4.5",
-    "mocha": "4.0.1",
-    "standard-version": "4.2.0"
+    "lint-staged": "7.3.0",
+    "mocha": "5.2.0",
+    "prettier": "1.14.3",
+    "standard-version": "4.4.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint:fix",
+      "git add"
+    ],
+    "*.{css,md}": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "license": "MIT"
 }
