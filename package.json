@@ -37,15 +37,5 @@
     "prettier": "1.15.3",
     "standard-version": "4.4.0"
   },
-  "lint-staged": {
-    "*.js": [
-      "npm run lint:fix",
-      "git add"
-    ],
-    "*.{css,md}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
   "license": "MIT"
 }
