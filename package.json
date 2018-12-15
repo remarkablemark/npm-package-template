@@ -5,12 +5,10 @@
   "author": "Mark <mark@remarkablemark.org>",
   "main": "index.js",
   "scripts": {
-    "commitmsg": "commitlint -e $GIT_PARAMS",
     "cover": "istanbul cover _mocha",
     "coveralls": "cat coverage/lcov.info | coveralls",
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "npm run lint -- --fix",
-    "precommit": "lint-staged",
     "release": "standard-version --no-verify",
     "test": "mocha"
   },
@@ -32,7 +30,7 @@
     "@commitlint/config-conventional": "7.1.2",
     "coveralls": "3.0.2",
     "eslint": "5.10.0",
-    "husky": "1.1.2",
+    "husky": "1.2.0",
     "istanbul": "0.4.5",
     "lint-staged": "8.1.0",
     "mocha": "5.2.0",
