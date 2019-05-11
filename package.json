@@ -10,7 +10,8 @@
     "lint": "eslint --ignore-path .gitignore .",
     "lint:fix": "npm run lint -- --fix",
     "release": "standard-version --no-verify",
-    "test": "mocha"
+    "test": "mocha",
+    "test:watch": "npm test -- --watch"
   },
   "repository": {
     "type": "git",
