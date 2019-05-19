@@ -1,18 +1,16 @@
 {
   "env": {
-    "node": true,
     "browser": true,
-    "mocha": true
-  },
-  "parserOptions": {
-    "sourceType": "module"
+    "commonjs": true,
+    "mocha": true,
+    "node": true
   },
   "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 6
+  },
+  "plugins": ["prettier"],
   "rules": {
-    "indent": ["error", 2, { "SwitchCase": 1 }],
-    "linebreak-style": ["error", "unix"],
-    "quotes": ["error", "single"],
-    "no-unused-vars": ["error", { "vars": "all", "args": "none" }],
-    "no-cond-assign": 2
+    "prettier/prettier": "error"
   }
 }
