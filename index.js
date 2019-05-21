@@ -1,3 +1,3 @@
-'use strict';
-
-module.exports = 'npm-package-template';
+module.exports = function() {
+  return 'npm-package-template';
+};

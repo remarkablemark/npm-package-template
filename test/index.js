@@ -1,15 +1,8 @@
-'use strict';
+const assert = require('assert');
+const main = require('..');
 
-/**
- * Module dependencies.
- */
-var assert = require('assert');
-
-/**
- * Test suite.
- */
-describe('main', function() {
-  it('should respond with placeholder', function() {
-    assert.equal(require('../index'), 'npm-package-template');
+describe('npm-package-template', () => {
+  it('returns with placeholder', () => {
+    assert.equal(main(), 'npm-package-template');
   });
 });
