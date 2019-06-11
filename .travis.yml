@@ -4,6 +4,8 @@ node_js:
 install:
   - npm install
 script:
+  # Lint last commit message from history
+  - npx commitlint --from=HEAD~1
   - npm run lint
   - npm run test:coverage
 after_script:
