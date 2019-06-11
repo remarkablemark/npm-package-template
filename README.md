@@ -11,43 +11,86 @@ An npm package template.
 
 ## Installation
 
-Git:
+Clone repository with Git:
 
 ```sh
 $ git clone https://github.com/remarkablemark/npm-package-template.git
+$ cd npm-package-template
 ```
 
-Zip:
+Or download repository with ZIP:
 
 ```sh
 $ curl -LO https://github.com/remarkablemark/npm-package-template/archive/master.zip
 $ unzip master.zip
 $ rm master.zip
+$ cd npm-package-template
 ```
 
 ## Usage
 
+Install package dependencies:
+
 ```sh
-$ cd npm-package-template
 $ npm install
+```
+
+Reinitialize Git repository:
+
+```sh
 $ rm -rf .git
 $ git init
 ```
 
+Make first commit:
+
+```sh
+$ git add .
+$ git commit -m "feat: clone project from npm-package-template"
+```
+
+Update package name to `my-package-name`:
+
+```sh
+$ git grep -l 'npm-package-template' | xargs sed -i '' -e 's/npm-package-template/my-package-name/g'
+```
+
+Manually update the files:
+
+- [ ] LICENSE
+- [ ] README.md
+- [ ] package.json
+
 ## Testing
+
+Run tests:
 
 ```sh
 $ npm test
+```
+
+Run tests with coverage:
+
+```sh
+$ npm run test:coverage
+```
+
+Lint files:
+
+```sh
 $ npm run lint
+$ npm run lint:fix
 ```
 
 ## Release
 
+Only collaborators with credentials can release and publish:
+
 ```sh
 $ npm run release
-$ git push --follow-tags
+$ git push --follow-tags && npm publish
 ```
 
 ## License
 
-[MIT](LICENSE)
+[MIT](https://github.com/remarkablemark/npm-package-template/blob/master/LICENSE)
