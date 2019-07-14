@@ -69,16 +69,34 @@ Run tests:
 $ npm test
 ```
 
+Run tests in watch mode:
+
+```sh
+$ npm run test:watch
+```
+
 Run tests with coverage:
 
 ```sh
 $ npm run test:coverage
 ```
 
+View coverage in browser:
+
+```sh
+$ npm run test:coverage:report
+$ open coverage/index.html
+```
+
 Lint files:
 
 ```sh
 $ npm run lint
+```
+
+Fix lint errors:
+
+```sh
 $ npm run lint:fix
 ```
 
@@ -89,6 +107,12 @@ Only collaborators with credentials can release and publish:
 ```sh
 $ npm run release
 $ git push --follow-tags && npm publish
+```
+
+To see what files are going to be published, run the command:
+
+```sh
+$ tar tvf $(npm pack)
 ```
 
 ## License
