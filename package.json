@@ -22,9 +22,7 @@
     "url": "https://github.com/remarkablemark/npm-package-template/issues"
   },
   "keywords": [
-    "npm",
-    "package",
-    "template"
+    "npm-package-template"
   ],
   "dependencies": {},
   "devDependencies": {
