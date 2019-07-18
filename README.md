@@ -112,7 +112,8 @@ $ git push --follow-tags && npm publish
 To see what files are going to be published, run the command:
 
 ```sh
-$ tar tvf $(npm pack)
+$ npm pack --dry-run
+# tar tvf $(npm pack)
 ```
 
 ## License
