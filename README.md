@@ -29,11 +29,18 @@ $ cd npm-package-template
 
 ## Usage
 
-Install package dependencies:
+Rename package (use [npm-package-name-checker](https://remarkablemark.org/npm-package-name-checker/) to check for name availability):
 
 ```sh
-$ npm install
+# replace $NAME with your package name
+$ git grep -l npm-package-template | xargs sed -i '' -e "s/npm-package-template/$NAME/g"
 ```
+
+Manually update the files:
+
+- [ ] LICENSE
+- [ ] README.md
+- [ ] package.json
 
 Reinitialize Git repository:
 
@@ -42,24 +49,18 @@ $ rm -rf .git
 $ git init
 ```
 
+Install package dependencies:
+
+```sh
+$ npm install
+```
+
 Make first commit:
 
 ```sh
 $ git add .
-$ git commit -m "feat: clone project from npm-package-template"
+$ git commit -m "feat: initial commit"
 ```
-
-Update package name to `my-package-name`:
-
-```sh
-$ git grep -l 'npm-package-template' | xargs sed -i '' -e 's/npm-package-template/my-package-name/g'
-```
-
-Manually update the files:
-
-- [ ] LICENSE
-- [ ] README.md
-- [ ] package.json
 
 ## Testing
 
@@ -115,6 +116,13 @@ To see what files are going to be published, run the command:
 $ npm pack --dry-run
 # tar tvf $(npm pack)
 ```
+
+## Support
+
+- [Patreon](https://b.remarkabl.org/patreon)
+- [Ko-fi](https://b.remarkabl.org/ko-fi)
+- [Liberapay](https://b.remarkabl.org/liberapay)
+- [Teepsring](https://b.remarkabl.org/teespring)
 
 ## License
 
