@@ -36,7 +36,7 @@
     "mocha": "^7.0.0",
     "nyc": "^15.0.0",
     "prettier": "^1.19.1",
-    "standard-version": "^6"
+    "standard-version": "^8"
   },
   "files": [],
   "license": "MIT"
