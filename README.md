@@ -5,26 +5,16 @@
 [![NPM version](https://img.shields.io/npm/v/npm-package-template.svg)](https://www.npmjs.com/package/npm-package-template)
 [![Build Status](https://travis-ci.org/remarkablemark/npm-package-template.svg?branch=master)](https://travis-ci.org/remarkablemark/npm-package-template)
 [![Coverage Status](https://coveralls.io/repos/github/remarkablemark/npm-package-template/badge.svg?branch=master)](https://coveralls.io/github/remarkablemark/npm-package-template?branch=master)
-[![Dependency status](https://david-dm.org/remarkablemark/npm-package-template.svg)](https://david-dm.org/remarkablemark/npm-package-template)
 
-An npm package template.
+npm package template.
 
 ## Installation
 
 Clone repository with Git:
 
 ```sh
-$ git clone https://github.com/remarkablemark/npm-package-template.git
-$ cd npm-package-template
-```
-
-Or download repository with ZIP:
-
-```sh
-$ curl -LO https://github.com/remarkablemark/npm-package-template/archive/master.zip
-$ unzip master.zip
-$ rm master.zip
-$ cd npm-package-template
+git clone https://github.com/remarkablemark/npm-package-template.git
+cd npm-package-template
 ```
 
 ## Usage
@@ -33,7 +23,7 @@ Rename package (use [npm-package-name-checker](https://remarkablemark.org/npm-pa
 
 ```sh
 # replace $NAME with your package name
-$ git grep -l npm-package-template | xargs sed -i '' -e "s/npm-package-template/$NAME/g"
+git grep -l npm-package-template | xargs sed -i '' -e "s/npm-package-template/$NAME/g"
 ```
 
 Manually update the files:
@@ -45,21 +35,20 @@ Manually update the files:
 Reinitialize Git repository:
 
 ```sh
-$ rm -rf .git
-$ git init
+rm -rf .git
+git init
 ```
 
 Install package dependencies:
 
 ```sh
-$ npm install
+npm install
 ```
 
 Make first commit:
 
 ```sh
-$ git add .
-$ git commit -m "feat: initial commit"
+git commit -am "feat: initial commit"
 ```
 
 ## Testing
@@ -67,38 +56,38 @@ $ git commit -m "feat: initial commit"
 Run tests:
 
 ```sh
-$ npm test
+npm test
 ```
 
 Run tests in watch mode:
 
 ```sh
-$ npm run test:watch
+npm run test:watch
 ```
 
 Run tests with coverage:
 
 ```sh
-$ npm run test:coverage
+npm run test:coverage
 ```
 
 View coverage in browser:
 
 ```sh
-$ npm run test:coverage:report
-$ open coverage/index.html
+npm run test:coverage:report
+open coverage/index.html
 ```
 
 Lint files:
 
 ```sh
-$ npm run lint
+npm run lint
 ```
 
 Fix lint errors:
 
 ```sh
-$ npm run lint:fix
+npm run lint:fix
 ```
 
 ## Release
@@ -106,14 +95,14 @@ $ npm run lint:fix
 Only collaborators with credentials can release and publish:
 
 ```sh
-$ npm run release
-$ git push --follow-tags && npm publish
+npm run release
+git push --follow-tags && npm publish
 ```
 
 To see what files are going to be published, run the command:
 
 ```sh
-$ npm pack --dry-run
+npm pack --dry-run
 # tar tvf $(npm pack)
 ```
 
