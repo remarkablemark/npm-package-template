@@ -1,6 +1,6 @@
 # npm-package-template
 
-[![NPM](https://nodei.co/npm/npm-package-template.png)](https://nodei.co/npm/npm-package-template/)
+[![NPM](https://nodei.co/npm/npm-package-template.svg)](https://nodei.co/npm/npm-package-template/)
 
 [![NPM version](https://img.shields.io/npm/v/npm-package-template.svg)](https://www.npmjs.com/package/npm-package-template)
 [![Build Status](https://travis-ci.org/remarkablemark/npm-package-template.svg?branch=master)](https://travis-ci.org/remarkablemark/npm-package-template)
